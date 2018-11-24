@@ -19,7 +19,7 @@ def loadio(realm,name):
 
 
         try:
-                realmlist = requests.get('https://us.api.battle.net/wow/realm/status?apikey=ng5ere38ccpexbr5xruh9qtsh67749zf').json()
+                realmlist = requests.get('https://us.api.battle.net/wow/realm/status?apikey=xxxxxxxxx').json()
 
                 for realm_object in realmlist['realms']:
                         realms.append(realm_object['name'].lower().replace("'", '').encode('utf8'))
